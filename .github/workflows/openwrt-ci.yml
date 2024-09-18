@@ -50,6 +50,7 @@ jobs:
 
       - name: Generate configuration file
         run: make defconfig
+             ./scripts/diffconfig.sh > diff.config
 
       - name: Download packages
         run: make download -j16
